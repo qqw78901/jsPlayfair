@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>密码算法</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://www.gdutzuo.top:8080/source/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://www.gdutzuo.top:8080/source/bootstrap.min.css">
+    <script src="http://www.gdutzuo.top:8080/source/bootstrap.min.js"></script>
+    <script type="text/javascript" src="play.js"></script>
+</head>
+<style type="text/css" rel="stylesheet">
+    .center {
+        margin-top: 20%;
+    }
+
+    p {
+        word-break: break-all;
+    }
+
+    textarea {
+        height: 200px !important;
+    }
+</style>
+<body class="container">
+
+
+<div class="row center">
+    <h2 class="text-center">Playfair密码</h2>
+
+    <div class="col-sm-6 col-sm-push-3">
+        <input type="text" class="form-control" id="key" placeholder="设置密匙">
+    </div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="col-sm-6 col-sm-push-3">
+        <label for="psw">需要加/解密的内容:</label>
+        <textarea class="form-control" id="psw"></textarea>
+    </div>
+    <div class="col-sm-2 col-sm-push-3">
+        <label>密码矩阵:</label>
+        <p id="keyArr" class="text-left h4 lead">待生成</p>
+    </div>
+
+</div>
+<div class="row">
+    <br/>
+
+    <div class="col-sm-6 col-sm-push-3">
+        <button type="button" id="on_lock" class="btn btn-info btn-block">加密</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-sm-push-3 ">
+        <br/>
+        <button type="button" id="un_lock" class="btn btn-success btn-block">解密</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-sm-push-3">
+        <br/>
+        <a id="toHill" class="btn btn-primary btn-block" href="hill.html">转到Hill密码算法</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-sm-push-3">
+        <p id="result" class="text-center h4 lead"></p>
+    </div>
+</div>
+
+</body>
+</html>
